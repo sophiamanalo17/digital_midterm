@@ -1,0 +1,109 @@
+@import url("https://use.typekit.net/ybo7fyf.css");
+@font-face {
+    font-family: myFont;
+    src: url(Billing\ Lottre.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100%;;
+    background: rgb(187, 219, 202);
+    margin: 3em;
+  }
+
+h1 {
+    font-family: myFont;
+    font-size: 7rem;
+    margin: 0;
+    color: rgb(30, 24, 111);
+}
+
+p{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    color: rgb(30, 24, 111);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title > p{
+    margin-top: 0;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .toggle {
+    flex: auto;
+  }
+  
+  .toggle input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .toggle .onoff {
+    color: #000000;
+    font-size: 1.7em;
+    text-align: left;
+    display: block;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 100px;
+    height: 50px;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #fcfcfc;
+    transition: 0.4s;
+    top: 10px;
+    left: 10px;
+  }
+  
+  input:checked + .slider {
+    background-color: #6a71f5;
+    box-shadow: 0 0 12px #5e5eae;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(50px);
+  }
+  
+  .slider.round {
+    border-radius: 100px;
+  }
+  .slider.round::before {
+    border-radius: 100px;
+  }
+
+
+  
