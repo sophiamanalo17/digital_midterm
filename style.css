@@ -7,23 +7,25 @@
 body {
     height: 100vh;
     width: 100%;;
-    background: rgb(187, 219, 202);
-    margin: 3em;
+    margin: 1.2em;
+    background-color: #90b5c3;
+
   }
 
 h1 {
     font-family: myFont;
-    font-size: 7rem;
+    font-size: 9rem;
     margin: 0;
-    color: rgb(30, 24, 111);
+    color: rgb(255, 255, 255);
 }
+
 
 p{
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.7rem;
-    color: rgb(30, 24, 111);
+    color: rgb(2, 2, 7);
 }
 
 .title{
@@ -31,16 +33,27 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .title > p{
     margin-top: 0;
 }
 
+.photos {
+  height: 40rem;
+  padding: 2rem;
+}
+
 .column {
     float: left;
-    width: 30%;
+    width: 29%;
     padding: 1rem;
+    margin: .5rem;
+    background-color: #ffffff;
+    height: 32rem;
+    border-radius: 20px;
   }
   
   .row::after {
@@ -51,6 +64,9 @@ p{
   
   .toggle {
     flex: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
   }
   
   .toggle input {
